@@ -42,7 +42,7 @@ Right Motor: A-1A ---> pin8 of the edge connector
 Right Motor: A-1B ---> pin12 of the edge connector
 
 Left Motor: B-1A ---> pin0 of the edge connector
-Left Motor: B-1A ---> pin16 of the edge connector
+Left Motor: B-1B ---> pin16 of the edge connector
 </pre>
 
 The simplest way to make the motors move is to set one pin to HIGH (1)and the the other pin to LOW(0) (to move full speed forwards). We do this by sending power to the respective GPIO pins using write_digital. 
