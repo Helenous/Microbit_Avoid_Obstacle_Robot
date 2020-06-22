@@ -115,6 +115,8 @@ import radio
 radio.config(channel=20)
 radio.on()
 radio.config(power=7)
+
+<pre>
 display.show(Image.HAPPY)
 while True:
     gesture = accelerometer.current_gesture()
@@ -137,7 +139,6 @@ while True:
         radio.send('brakes')
 
 2. Let's code the Robot
-
 <pre>
 from microbit import *
 import radio
