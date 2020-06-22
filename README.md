@@ -13,6 +13,7 @@
 - [Changing speed of the motor](#changing-speed-of-the-motor)
 - [Radio control using accelerometer](#radio-control-using-accelerometer)
 - [Avoid Obstacle](#avoid-obstacle)
+- [The Components](#the-components)
 - [Author Info](#author-info)
 
 # Description
@@ -137,6 +138,7 @@ while True:
 
 2. Let's code the Robot
 
+<pre>
 from microbit import *
 import radio
 radio.config(channel=20)
@@ -179,6 +181,21 @@ while True:
         pin12.write_digital(0)
         pin0.write_digital(0)
         pin16.write_digital(0)
+<pre>        
+
+## The Components
+- Microbit 
+- Microbit Edge Connector
+- Motor Driver L1190S
+- Ultrasonic Sensor
+- Wooden Robot Chassis
+- Gear Motors
+- Wheels
+- Caster wheel
+- Jumper wires
+- Mini Breadboard
+- Battery pack
+- Screws
 
 ## Author Info
 
