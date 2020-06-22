@@ -6,14 +6,14 @@
 
 - [Description](#description)
 - [Assembling The Robot](#assembling-the-robot)
-- [Understand how motor works](#how-motor-works)
+- [Understand how motor works](#understand-how-motor-works)
 - [Make robot turn left and right](#make-robot-turn-left-and-right)
 - [Make robot move forward and backward](#make-robot-move-forward-and-backward)
 - [How to Stop Motor](#how-to-stop-motor)
 - [Changing speed of the motor](#changing-speed-of-the-motor)
 - [Radio control using accelerometer](#radio-control-using-accelerometer)
 - [Avoid Obstacle](#avoid-obstacle)
-- [The Components](#the-components)
+- [Components](#components)
 - [Author Info](#author-info)
 
 # Description
@@ -78,7 +78,7 @@ To move robot backward, both motors need to go backward:
 > pin0.write_digital(0)
 > pin16.write_digital(1)
 
-## Stop motor
+## How to Stop motor
 We will need to set all of the GPIO pins connected to the motors to off:
 > pin8.write_digital(0)
 > pin12.write_digital(0)
@@ -102,90 +102,31 @@ Doing this for the motors moving in reverse is a little different. We need to ch
 > pin8.write_analog(512)
 > pin12.write_digital(1)
 
-# Radio Controlled robot using the Accelerometer
+# Radio Control using Accelerometer 
+**Project 1**
 
 Now you understand how the motors work, we are now going to use a radio link to connect two Microbits which enabled strings of data to be sent between devices. We will also use the accelerometer feature of the Microbit.
 
 For this tutorial, you’ll need two micro:bits. Our robot will be controlled by micro:bit 1 that will read data from the built-in accelerometer and communicate the information to micro:bit 2  attached to our robot. We will code all of this project in MicroPython, using the Python editor for microbit, on the Microbit.org website.
 
-<pre>
-1. Let's code the controller
 
-from microbit import *
-import radio
-radio.config(channel=20)
-radio.on()
-radio.config(power=7)
+1. Coding the controller - 1 x Microbit
 
+The Python code can be found in the Microbit Robot folder
 
-display.show(Image.HAPPY)
-while True:
-    gesture = accelerometer.current_gesture()
-    print(gesture)
-    if gesture == "left":
-        display.show(Image.ARROW_W)
-        radio.send('left')
-    elif gesture == "right":
-        display.show(Image.ARROW_E)
-        radio.send('right')
-    elif gesture == "up":
-        display.show(Image.ARROW_N)
-        radio.send('forward')
-    elif gesture == "down":
-        display.show(Image.ARROW_S)
-        radio.send('reverse')
-        
-    elif button_a.was_pressed():
-        display.show(Image.ASLEEP)
-        radio.send('brakes')
-<pre>
+2. Coding the Robot - 1 x Microbit
 
-2. Let's code the Robot
+The Python code can be found in the Microbit Robot folder
 
-from microbit import *
-import radio
-radio.config(channel=20)
-radio.on()
-radio.config(power=7)
+# Avoid Obstacle 
+**Project 2**
 
-while True:
-    incoming = radio.receive()
-    if incoming == "left":
-        display.show(Image.ARROW_E)
-        pin8.write_digital(1)
-        pin12.write_digital(0)
-        pin0.write_digital(0)
-        pin16.write_analog(200)
-        sleep(100)
-    elif incoming == "right":
-        display.show(Image.ARROW_W)
-        pin8.write_digital(0)
-        pin12.write_analog(200)
-        pin0.write_digital(1)
-        pin16.write_digital(0)
-    elif incoming == "forward":
-        display.show(Image.ARROW_N)
-        pin8.write_digital(1)
-        pin12.write_digital(0)
-        pin0.write_digital(1)
-        pin16.write_digital(0)
-        
-    elif incoming == "reverse":
-        display.show(Image.ARROW_S)
-        pin8.write_digital(0)
-        pin12.write_digital(1)
-        pin0.write_digital(0)
-        pin16.write_digital(1)
-        
-    elif incoming == "brakes":
-        display.show(Image.ASLEEP)
-        pin8.write_digital(0)
-        pin12.write_digital(0)
-        pin0.write_digital(0)
-        pin16.write_digital(0)
+1 x Microbit
+The Python code can be found in the Microbit Robot folder
 
-## The Components
-- Microbit 
+# Components 
+**What you will need**
+- Microbit
 - Microbit Edge Connector
 - Motor Driver L1190S
 - Ultrasonic Sensor
