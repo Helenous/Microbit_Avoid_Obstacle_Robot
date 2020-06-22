@@ -1,6 +1,7 @@
 # Microbit Robot powered by L9110S
 
-![Home Kit 2](https://github.com/Helenous/Microbit_Avoid_Obstacle_Robot/blob/master/Image/Home%20Kit%202.jpg)
+![](image/robot.jpeg)
+
 
 ### Table of Contents
 
