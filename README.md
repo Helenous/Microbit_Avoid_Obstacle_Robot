@@ -1,7 +1,26 @@
+# Microbit Robot powered by L9110S
+
+![Project Image](project-image-url)
+
+### Table of Contents
+
+- [Description](#description)
+- [Assembling The Robot](#assembling-the-robot)
+- [Understand how motor works](#how-motor-works)
+- [Make robot turn left and right](#robot-turn)
+- [Make robot move forward and backward](#robot-forward-backward)
+- [How to Stop Motor](#stop-motor)
+- [Changing speed of the motord](#changing-speed)
+- [Radio Control using accelerometer](#changing-speed)
+- [Avoid Obstacle](#avoid-obstacle)
+- [Author Info](#author-info)
+
+# Description
+Build a robot powered by a Microbit that will move and avoid obstacles.
 
 # Assembling the Robot
 
-cf pdf file 
+cf pdf file in Assembling Instruction folder
 
 # Understand how motor works
 
@@ -68,7 +87,10 @@ We will need to set all of the GPIO pins connected to the motors to off:
 
 # Changing speed of the motor
 
-If we want to change the speed of a motor, so that it is not going at full speed all the time, we need to use PWM (Pulse Width Modulation). This is a means of changing the amount of power given to the motor by switching it on and off very fast. The percentage value of PWM determines the amount of each cycle that the output is ON. So a percentage of 100% is the same as being on all the time. A percentage of 50% would mean that the motor is only energised half the time, so it will go much slower. Note that the actual speed of the motor is not the same as the percentage of PWM – the motor won’t turn at all if the PWM value is too low and you will also get some stuttering at certain values. Nevertheless, being able to change the speed makes for a much better robot.
+If we want to change the speed of a motor, so that it is not going at full speed all the time, we need to use PWM (Pulse Width Modulation). This is a means of changing the amount of power given to the motor by switching it on and off very fast. 
+
+The percentage value of PWM determines the amount of each cycle that the output is ON. So a percentage of 100% is the same as being on all the time. A percentage of 50% would mean that the motor is only energised half the time, so it will go much slower. Note that the actual speed of the motor is not the same as the percentage of PWM – the motor won’t turn at all if the PWM value is too low and you will also get some stuttering at certain values. Nevertheless, being able to change the speed makes for a much better robot.
+
 To change the PWM value of a pin, we must use the analog_write commands. These can be set to a value between 0 (always off) to 1023 (always on), so 50% would be 511.(which half of 1023)
 Here are the commands to change the speed of the Right motor to approx 50% (value is 511)
 Move right motor forwards at 50%
@@ -80,13 +102,13 @@ Doing this for the motors moving in reverse is a little different. We need to ch
 > pin8.write_analog(512)
 > pin12.write_digital(1)
 
-# RADIO CONTROLLED CAR USING ACCELEROMETER
+# Radio Controlled robot using the Accelerometer
 
 Now you understand how the motors work, we are now going to use a radio link to connect two Microbits which enabled strings of data to be sent between devices. We will also use the accelerometer feature of the Microbit.
 
 For this tutorial, you’ll need two micro:bits. Our robot will be controlled by micro:bit 1 that will read data from the built-in accelerometer and communicate the information to micro:bit 2  attached to our robot. We will code all of this project in MicroPython, using the Python editor for microbit, on the Microbit.org website.
 
-A/ LET’S CODE THE CONTROLLER
+1. Let's code the controller
 from microbit import *
 import radio
 radio.config(channel=20)
@@ -113,7 +135,7 @@ while True:
         display.show(Image.ASLEEP)
         radio.send('brakes')
 
-B/ LET’S CODE THE ROBOT
+2. Let's code the Robot
 
 from microbit import *
 import radio
