@@ -1,8 +1,7 @@
 # Microbit Robot powered by L9110S
 
-<p align="center">
-  <img src='images/robot.png'/>
-</p>
+![robot](https://github.com/Helenous/Microbit_Robot/blob/master/Images/Robot.png)
+
 
 
 ### Table of Contents
