@@ -108,6 +108,7 @@ Now you understand how the motors work, we are now going to use a radio link to 
 
 For this tutorial, you’ll need two micro:bits. Our robot will be controlled by micro:bit 1 that will read data from the built-in accelerometer and communicate the information to micro:bit 2  attached to our robot. We will code all of this project in MicroPython, using the Python editor for microbit, on the Microbit.org website.
 
+<pre>
 1. Let's code the controller
 
 from microbit import *
@@ -116,7 +117,7 @@ radio.config(channel=20)
 radio.on()
 radio.config(power=7)
 
-<pre>
+
 display.show(Image.HAPPY)
 while True:
     gesture = accelerometer.current_gesture()
@@ -182,7 +183,6 @@ while True:
         pin12.write_digital(0)
         pin0.write_digital(0)
         pin16.write_digital(0)
-<pre>
 
 ## The Components
 - Microbit 
