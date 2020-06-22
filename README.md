@@ -7,11 +7,11 @@
 - [Description](#description)
 - [Assembling The Robot](#assembling-the-robot)
 - [Understand how motor works](#how-motor-works)
-- [Make robot turn left and right](#robot-turn)
-- [Make robot move forward and backward](#robot-forward-backward)
-- [How to Stop Motor](#stop-motor)
-- [Changing speed of the motord](#changing-speed)
-- [Radio Control using accelerometer](#changing-speed)
+- [Make robot turn left and right](#make-robot-turn-left-and-right)
+- [Make robot move forward and backward](#make-robot-move-forward-and-backward)
+- [How to Stop Motor](#how-to-stop-motor)
+- [Changing speed of the motor](#changing-speed-of-the-motor)
+- [Radio control using accelerometer](#radio-control-using-accelerometer)
 - [Avoid Obstacle](#avoid-obstacle)
 - [Author Info](#author-info)
 
@@ -47,7 +47,6 @@ To move the motor at full speed in reverse, we change which pin is 0 (Low) and 1
 Move left motor Reverse:
 > pin0.write_digital(0) 
 > pin16.write_digital(1) 
-
 
 ## Make robot turn left and right
 To turn the robot left we need to tell one motor to go forward, and the other to go backwards. 
@@ -179,3 +178,10 @@ while True:
         pin12.write_digital(0)
         pin0.write_digital(0)
         pin16.write_digital(0)
+
+## Author Info
+
+- Twitter - [@girlsintocoding](https://twitter.com/girlsintocoding)
+- Website - [Girls Into Coding](https://girlsintocoding.com)
+
+[Back To The Top](#Microbit Robot powered by L9110S)
