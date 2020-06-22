@@ -23,6 +23,8 @@ Build a robot powered by a Microbit that will move and avoid obstacles.
 
 cf pdf file in Assembling Instruction folder
 
+[Back To The Top](#Microbit-Robot-powered-by-L9110S)
+
 # Understand how motor works
 
 To control the motors, we need to access the pins of the microbit . We do this though Edge connector and the motor driver L9110s.
@@ -48,6 +50,8 @@ To move the motor at full speed in reverse, we change which pin is 0 (Low) and 1
 Move left motor Reverse:
 > pin0.write_digital(0) 
 > pin16.write_digital(1) 
+
+[Back To The Top](#Microbit-Robot-powered-by-L9110S)
 
 ## Make robot turn left and right
 To turn the robot left we need to tell one motor to go forward, and the other to go backwards. 
@@ -85,6 +89,8 @@ We will need to set all of the GPIO pins connected to the motors to off:
 > pin0.write_digital(0)
 > pin16.write_digital(0)
 
+[Back To The Top](#Microbit-Robot-powered-by-L9110S)
+
 # Changing speed of the motor
 
 If we want to change the speed of a motor, so that it is not going at full speed all the time, we need to use PWM (Pulse Width Modulation). This is a means of changing the amount of power given to the motor by switching it on and off very fast. 
@@ -102,13 +108,14 @@ Doing this for the motors moving in reverse is a little different. We need to ch
 > pin8.write_analog(512)
 > pin12.write_digital(1)
 
+[Back To The Top](#Microbit-Robot-powered-by-L9110S)
+
 # Radio Control using Accelerometer 
 **Project 1**
 
 Now you understand how the motors work, we are now going to use a radio link to connect two Microbits which enabled strings of data to be sent between devices. We will also use the accelerometer feature of the Microbit.
 
 For this tutorial, you’ll need two micro:bits. Our robot will be controlled by micro:bit 1 that will read data from the built-in accelerometer and communicate the information to micro:bit 2  attached to our robot. We will code all of this project in MicroPython, using the Python editor for microbit, on the Microbit.org website.
-
 
 1. Coding the controller - Microbit #1
 
@@ -139,9 +146,11 @@ The Python code can be found in the Microbit Robot folder
 - Battery pack
 - Screws
 
+[Back To The Top](#Microbit-Robot-powered-by-L9110S)
+
 ## Author Info
 
 - Twitter - [@girlsintocoding](https://twitter.com/girlsintocoding)
 - Website - [Girls Into Coding](https://girlsintocoding.com)
 
-[Back To The Top](#Microbit Robot powered by L9110S)
+[Back To The Top](#Microbit-Robot-powered-by-L9110S)
