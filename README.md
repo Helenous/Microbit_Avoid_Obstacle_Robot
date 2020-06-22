@@ -31,14 +31,16 @@ To control the motors, we need to access the pins of the microbit . We do this t
 
 Each motor has two pins connected to it. 
 Right motor: Pin 8, Pin 12
-Left motor: Pin 0, Pin 16  
+Left motor: Pin 0, Pin 16 
 
-Ed connector & L9110s:
+<pre>
+Edge connector & L9110s:
 Right Motor: A-1A ---> pin8 of the edge connector
 Right Motor: A-1B ---> pin12 of the edge connector
 
 Left Motor: B-1A ---> pin0 of the edge connector
 Left Motor: B-1A ---> pin16 of the edge connector
+</pre>
 
 The simplest way to make the motors move is to set one pin to HIGH (1)and the the other pin to LOW(0) (to move full speed forwards). We do this by sending power to the respective GPIO pins using write_digital. 
  
@@ -55,8 +57,10 @@ Move left motor Reverse:
 
 ## Make robot turn left and right
 To turn the robot left we need to tell one motor to go forward, and the other to go backwards. 
+
 Motor A is the right motor and it’s connected to pins 8 and 12. 
 Motor B is the left motor and is connected to pins 0 and 16.  
+
 So to turn the robot left, motor A needs to go forwards and motor B backwards. 
 > pin8.write_digital(1)
 > pin12.write_digital(0)
