@@ -137,9 +137,10 @@ while True:
     elif button_a.was_pressed():
         display.show(Image.ASLEEP)
         radio.send('brakes')
+<pre>
 
 2. Let's code the Robot
-<pre>
+
 from microbit import *
 import radio
 radio.config(channel=20)
