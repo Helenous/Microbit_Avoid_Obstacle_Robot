@@ -1,7 +1,5 @@
 # Microbit Robot powered by L9110S
 
-![](image/robot.jpeg)
-
 
 ### Table of Contents
 
