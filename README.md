@@ -135,8 +135,8 @@ The Python code can be found in the Microbit Robot folder
 # Avoid Obstacle 
 **Project 2**
 
-1 x Microbit
-1 x Ultrasonic Distance Sensor
+- 1 x Microbit
+- 1 x Ultrasonic Distance Sensor
 The Python code can be found in the Microbit Robot folder
 
 [Back To The Top](#Microbit-Robot-powered-by-L9110S)
