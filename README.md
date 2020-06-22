@@ -2,8 +2,6 @@
 
 ![robot](https://github.com/Helenous/Microbit_Robot/blob/master/Images/Robot.png)
 
-![robot](images/robot.png)
-
 
 ### Table of Contents
 
