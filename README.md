@@ -144,7 +144,7 @@ import radio
 radio.config(channel=20)
 radio.on()
 radio.config(power=7)
-<pre>
+
 while True:
     incoming = radio.receive()
     if incoming == "left":
@@ -180,7 +180,7 @@ while True:
         pin12.write_digital(0)
         pin0.write_digital(0)
         pin16.write_digital(0)
-<pre>        
+<pre>
 
 ## The Components
 - Microbit 
