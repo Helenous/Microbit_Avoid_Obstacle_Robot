@@ -101,13 +101,11 @@ If we want to change the speed of a motor, so that it is not going at full speed
 To change the PWM value of a pin, we must use the analog_write commands. These can be set to a value between 0 (always off) to 1023 (always on), so 50% would be 511.(which half of 1023)
 Here are the commands to change the speed of the Right motor to approx 50% (value is 511)
 Move right motor forwards at 50%
-> pin8.write_analog(511)
-> pin12.write_digital(0)
+> pin8.write_analog(511); pin12.write_digital(0)
  
 What about moving the right motor Reverse at 50%?
 Doing this for the motors moving in reverse is a little different. We need to change the second pin to 1 for reverse. We then simply take the number (512) in this case) away from 1023, giving 512:
-> pin8.write_analog(512)
-> pin12.write_digital(1)
+> pin8.write_analog(512); pin12.write_digital(1)
 
 [Back To The Top](#Microbit-Robot-with-the-L9110S-motor-driver-board)
 
