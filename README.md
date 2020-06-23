@@ -135,7 +135,12 @@ Go to your Microbit Python editor, write the code for the Controller, save it an
 
 The second Microbit will receive a radio signal from the 1st Microbit: left, right, forward, reverse. Depending on the message received, the robot will move left, right, forward or backwards.
 
-Go to your Microbit Python editor, start writing the code for the robot, save it and download it to the Microbit #2
+- Plug the download cable to your Microbit
+- Go to your Microbit Python editor, start writing the code for the robot, save it and download it to the Microbit #2
+
+How to download your “code the controller” code to Microbit & save it - From the Python Editor on Microbit.org website.- Click on the link below to play the video
+
+https://youtu.be/ltqHbUjPnq4
 
 > The Python code can be found in the Microbit Robot folder
 
