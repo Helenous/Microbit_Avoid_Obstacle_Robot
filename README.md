@@ -1,21 +1,20 @@
-# Microbit Robot powered by L9110S
+# Microbit Robot With The L9910S Motor Driver Board
 
 ![robot](https://github.com/Helenous/Microbit_Robot/blob/master/Images/Robot.png)
 
 <img src= "images/robot.png" width=800>
 
-
 ### Table of Contents
 
 - [Description](#description)
 - [Assembling The Robot](#assembling-the-robot)
-- [Understand how motor works](#understand-how-motor-works)
-- [Make robot turn left and right](#make-robot-turn-left-and-right)
-- [Make robot move forward and backward](#make-robot-move-forward-and-backward)
-- [How to Stop Motor](#how-to-stop-motor)
-- [Changing speed of the motor](#changing-speed-of-the-motor)
+- [Understanding How Motors Work](#understanding-how-motors-work)
+- [How To Make The Robot Turn Left and Right](#how-to-make-the-robot-turn-left-and-right)
+- [Hoe To Make The Robot Move Forward and Backward](#how-to-make-the-robot-move-forward-and-backward)
+- [How to Stop The Motor](#how-to-stop-the-motor)
+- [Changing The Speed of The Motor](#changing-the-speed-of-the-motor)
 - [Radio control using accelerometer](#radio-control-using-accelerometer)
-- [Avoid Obstacle](#avoid-obstacle)
+- [The Ultrasonic Distance Sensor](#the-ultrasonic-distance-sensor)
 - [Components](#components)
 - [Author Info](#author-info)
 
@@ -28,7 +27,7 @@ cf pdf file in Assembling Instruction folder
 
 [Back To The Top](#Microbit-Robot-powered-by-L9110S)
 
-# Understand how motor works
+# Understanding How Motors Work
 
 To control the motors, we need to access the pins of the microbit . We do this though Edge connector and the motor driver L9110s.
 
@@ -58,7 +57,7 @@ Move left motor Reverse:
 
 [Back To The Top](#Microbit-Robot-powered-by-L9110S)
 
-## Make robot turn left and right
+## How To Make The Robot Turn Left and Right
 To turn the robot left we need to tell one motor to go forward, and the other to go backwards. 
 
 Motor A is the right motor and it’s connected to pins 8 and 12. 
@@ -76,7 +75,7 @@ The code to turn the robot right is a reverse of what we set for turning left.
 > pin0.write_digital(1)
 > pin16.write_digital(0)
 
-## Make robot move forward and backward
+## How To Make The Robot Move Forward and Backward
 To move robot forward, both motors need to go forward:
 > pin8.write_digital(1)
 > pin12.write_digital(0)
@@ -89,7 +88,7 @@ To move robot backward, both motors need to go backward:
 > pin0.write_digital(0)
 > pin16.write_digital(1)
 
-## How to Stop motor
+## How To Stop The Motor
 We will need to set all of the GPIO pins connected to the motors to off:
 > pin8.write_digital(0)
 > pin12.write_digital(0)
@@ -98,7 +97,7 @@ We will need to set all of the GPIO pins connected to the motors to off:
 
 [Back To The Top](#Microbit-Robot-powered-by-L9110S)
 
-# Changing speed of the motor
+# Changing The Speed of The Motor
 
 If we want to change the speed of a motor, so that it is not going at full speed all the time, we need to use PWM (Pulse Width Modulation). This is a means of changing the amount of power given to the motor by switching it on and off very fast. 
 
@@ -132,7 +131,7 @@ The Python code can be found in the Microbit Robot folder
 
 The Python code can be found in the Microbit Robot folder
 
-# Avoid Obstacle 
+# The Ultrasonic Distance Sensor 
 **Project 2**
 
 - 1 x Microbit
