@@ -174,17 +174,17 @@ Measure ticks difference between values returned from ticks_us()
 
 # Components 
 **What you will need**
-- Microbit
-- Microbit Edge Connector
-- Motor Driver L1190S
-- Ultrasonic Sensor
-- Wooden Robot Chassis
-- Gear Motors
-- Wheels
-- Caster wheel
+- 2 x Microbit
+- 1 x Microbit Edge Connector
+- 1 x Motor Driver L1190S
+- 1 x Ultrasonic Sensor
+- 1x Wooden Robot Chassis
+- 2x Gear Motors
+- 2x Wheels
+- 1x Caster wheel
 - Jumper wires
-- Mini Breadboard
-- Battery pack
+- 1x Mini Breadboard
+- 2x Battery pack
 - Screws
 
 [Back To The Top](#Microbit-Robot-with-the-L9110S-motor-driver-board)
