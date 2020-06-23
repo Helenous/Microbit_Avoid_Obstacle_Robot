@@ -47,15 +47,11 @@ Left Motor: B-1B ---> pin16 of the edge connector
 The simplest way to make the motors move is to set one pin to HIGH (1)and the the other pin to LOW(0) (to move full speed forwards). We do this by sending power to the respective GPIO pins using write_digital. 
  
 To make the make the left motor forwards,we will write in Python: 
-> pin0.write_digital(1)
-
-> pin16.write_digital(0)
+> pin0.write_digital(1); pin16.write_digital(0)
 
 To move the motor at full speed in reverse, we change which pin is 0 (Low) and 1 (High). 
 Move left motor Reverse:
-> pin0.write_digital(0)
-
-> pin16.write_digital(1) 
+> pin0.write_digital(0); pin16.write_digital(1) 
 
 [Back To The Top](#Microbit-Robot-with-the-L9110S-motor-driver-board)
 
