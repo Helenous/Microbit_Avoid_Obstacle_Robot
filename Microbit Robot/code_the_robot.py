@@ -34,7 +34,7 @@ while True:
         pin0.write_digital(0)
         pin16.write_digital(1)
         
-    elif incoming == "brakes":
+    elif incoming == "stop":
         display.show(Image.ASLEEP)
         pin8.write_digital(0)
         pin12.write_digital(0)

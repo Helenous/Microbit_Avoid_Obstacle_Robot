@@ -24,6 +24,6 @@ while True:
         
     elif button_a.was_pressed():
         display.show(Image.ASLEEP)
-        radio.send('brakes')
+        radio.send('stop')
         
 
