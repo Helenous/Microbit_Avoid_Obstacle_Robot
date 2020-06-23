@@ -65,9 +65,9 @@ Motor B is the left motor and is connected to pins 0 and 16.
 
 So to turn the robot left, motor A needs to go forwards and motor B backwards. 
 > pin8.write_digital(1)
-> pin12.write_digital(0)
+pin12.write_digital(0)
 > pin0.write_digital(0)
-> pin16.write_digital(1)
+pin16.write_digital(1)
 
 The code to turn the robot right is a reverse of what we set for turning left. 
 > pin8.write_digital(0)
