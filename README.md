@@ -54,7 +54,7 @@ To make the make the left motor forwards,we will write in Python:
 To move the motor at full speed in reverse, we change which pin is 0 (Low) and 1 (High). 
 Move left motor Reverse:
 > pin0.write_digital(0)
- 
+
 > pin16.write_digital(1) 
 
 [Back To The Top](#Microbit-Robot-with-the-L9110S-motor-driver-board)
@@ -66,36 +66,31 @@ Motor A is the right motor and it’s connected to pins 8 and 12.
 Motor B is the left motor and is connected to pins 0 and 16.  
 
 So to turn the robot left, motor A needs to go forwards and motor B backwards. 
-> pin8.write_digital(1)
-pin12.write_digital(0)
-> pin0.write_digital(0)
-pin16.write_digital(1)
+> pin8.write_digital(1); pin12.write_digital(0)
+
+> pin0.write_digital(0); pin16.write_digital(1)
 
 The code to turn the robot right is a reverse of what we set for turning left. 
-> pin8.write_digital(0)
-> pin12.write_digital(1)
-> pin0.write_digital(1)
-> pin16.write_digital(0)
+> pin8.write_digital(0); pin12.write_digital(1)
+
+> pin0.write_digital(1); pin16.write_digital(0)
 
 ## How To Make The Robot Move Forward and Backward
 To move robot forward, both motors need to go forward:
-> pin8.write_digital(1)
-> pin12.write_digital(0)
-> pin0.write_digital(1)
-> pin16.write_digital(0)
+> pin8.write_digital(1); pin12.write_digital(0)
+
+> pin0.write_digital(1); pin16.write_digital(0)
 
 To move robot backward, both motors need to go backward:
-> pin8.write_digital(0)
-> pin12.write_digital(1)
-> pin0.write_digital(0)
-> pin16.write_digital(1)
+> pin8.write_digital(0); pin12.write_digital(1)
+
+> pin0.write_digital(0); pin16.write_digital(1)
 
 ## How To Stop The Motor
 We will need to set all of the GPIO pins connected to the motors to off:
-> pin8.write_digital(0)
-> pin12.write_digital(0)
-> pin0.write_digital(0)
-> pin16.write_digital(0)
+> pin8.write_digital(0); pin12.write_digital(0)
+
+> pin0.write_digital(0); pin16.write_digital(0)
 
 [Back To The Top](#Microbit-Robot-with-the-L9110S-motor-driver-board)
 
