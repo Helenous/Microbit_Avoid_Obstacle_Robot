@@ -25,18 +25,18 @@ Build a robot powered by a Microbit that will move and avoid obstacles.
 
 cf pdf file in Assembling Instruction folder
 
-[Back To The Top](#Microbit-Robot-powered-by-L9110S)
+[Back To The Top](#Microbit-Robot-with-the-L9110S-motor-driver-board)
 
 # Understanding How Motors Work
 
-To control the motors, we need to access the pins of the microbit . We do this though Edge connector and the motor driver L9110s.
+To control the motors, we need to access the pins of the microbit . We do this through the Edge connector and the motor driver L9110s.
 
 Each motor has two pins connected to it. 
 Right motor: Pin 8, Pin 12
 Left motor: Pin 0, Pin 16 
 
 <pre>
-Edge connector & L9110s:
+L9110s & Edge connector:
 Right Motor: A-1A ---> pin8 of the edge connector
 Right Motor: A-1B ---> pin12 of the edge connector
 
@@ -46,7 +46,7 @@ Left Motor: B-1B ---> pin16 of the edge connector
 
 The simplest way to make the motors move is to set one pin to HIGH (1)and the the other pin to LOW(0) (to move full speed forwards). We do this by sending power to the respective GPIO pins using write_digital. 
  
-In Python, move left motor Forwards: 
+To make the make the left motor forwards,we will write in Python: 
 > pin0.write_digital(1) 
 > pin16.write_digital(0)
 
