@@ -23,8 +23,8 @@ Build a robot powered by a Microbit that will move and avoid obstacles.
 
 # Assembling the Robot
 
-cf pdf file in Assembling Instruction folder
-and Youtuve assembly video tutorial:
+cf pdf file in Assembling Instructions folder
+and Youtube assembly video tutorial:
 https://youtu.be/YVciGal-lao 
 
 [Back To The Top](#Microbit-Robot-with-the-L9110S-motor-driver-board)
