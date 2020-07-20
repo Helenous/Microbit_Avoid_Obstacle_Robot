@@ -38,7 +38,7 @@ Right motor: Pin 8, Pin 12
 Left motor: Pin 0, Pin 16 
 
 <pre>
-L9110s & Edge connector
+L9110s & Edge connector:
 Right Motor: A-1A ---> pin8 of the edge connector
 Right Motor: A-1B ---> pin12 of the edge connector
 
